@@ -7,9 +7,85 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Internship Registration</h1>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScnfLqExIsAiizhVEp2b2yoTFfOrpVK0bSvL5RxxokRLmYsBw/viewform?usp=sf_link" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<div class="grid-container">
+    <div class="item1">
+        <h1>Here Lies the Left Side Item1<h1>
+
     </div>
+
+    <div class="item2 container">
+        <form autocomplete="off" method="post" name="google-sheet">
+            <h1>Internship Registration</h1>
+            <input type="text" placeholder="Full Name" name="Name" required>
+            <input type="text" placeholder="Email Id" name="EmailId" required>
+            <input type="text" placeholder="Phone Number" name="Mobile" required>
+            <input type="text" placeholder="WhatsApp Number" name="WhatsApp" required>
+            <input type="text" placeholder="Highest Qualification" name="Degree" required>
+            <select name="Domain" required>
+                <option value="Not Selected">Your Internship Domain</option>
+                <option value="Human Resource Management">Human Resource Management</option>
+                <option value="Fundraising Coordinator">Fundraising Coordinator</option>
+                <option value="Social Media Marketing">Social Media Marketing</option>
+                <option value="Business Developmen">Business Development</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Machine Learning">Machine Learning</option>
+                <option value="Coding  Tutor">Coding  Tutor</option>
+                <option value="Artificial Intelligence">Artificial Intelligence</option>
+                <option value="Operations">Operations</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Social Campainer">Social Campainer</option>
+                <option value="Public Relations">Public Relations</option>
+                <option value="Development">Development</option>
+                <option value="Graphic Designer">Graphic Designer</option>
+                <option value="Content Writer">Content Writer</option>
+                <option value="Digital Marketing">Digital Marketing</option>
+                <option value="Capital Campaign">Capital Campaign</option>
+                <option value="Community Outreach">Community Outreach</option>
+                <option value="Philanthrophy">Philanthrophy</option>
+                <option value="Data Entry">Data Entry</option>
+                <option value="Volunteer">Volunteer</option>
+                <option value="Summer Internship">Summer Internship</option>
+                <option value="Human Resource Recruiter">Human Resource Recruiter</option>
+                <option value="Campus Ambassador">Campus Ambassador</option>
+                <option value="Social Worker">Social Worker</option>
+                <option value="English Tutor">English Tutor</option>
+                <option value="Web Development Tutor">Web Development Tutor</option>
+                <option value="Trainee Business Analyst">Trainee Business Analyst</option>
+                <option value="Facebook Marketing">Facebook Marketing</option>
+                <option value="Instagram Marketing">Instagram Marketing</option>
+                <option value="LinkedIn Marketing">LinkedIn Marketing</option>
+                <option value="YouTube Marketing">YouTube Marketing</option>
+                <option value="Event Management">Event Management</option>
+                <option value="Mentor">Mentor</option>
+                <option value="Marketing">Marketing</option>
+            </select>
+            <select name="Internship-Duration" required >
+                <option value="Not Selected">Internship Duration</option>
+                <option value="1 Week">1 Week</option>
+                <option value="1 Month">1 Month</option>
+                <option value="2 Months">2 Months</option>
+                <option value="3 Months">3 Months</option>
+                <option value="6 Months">6 Months</option>
+            </select>
+            
+            <button type="submit" name="Submit">Send</button>
+            <button type="reset" class="reset">Reset Form</button>
+            
+        </form>
+    </div>
+</div>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxhXW0x5Bi60oHIFt-Ah1W1SukBlYktQBTIKJODlHD6g60A3K8eC_ZXPyL0BicICmr3/exec'
+    const form = document.forms['google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
 </body>
 </html>

@@ -3,8 +3,8 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: right; */
+    /* align-items: center; */
     height: 100vh;
     background-color: #f0f0f0;
 }
@@ -14,7 +14,7 @@ body {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
+    
 }
 
 h1 {
@@ -24,6 +24,9 @@ h1 {
 form {
     display: flex;
     flex-direction: column;
+    padding: 10px;
+    width: 90%;
+    max-width: 600px;
 }
 
 label {
@@ -33,7 +36,8 @@ label {
 
 input[type="text"],
 input[type="email"],
-input[type="file"] {
+input[type="file"],
+select {
     padding: 8px;
     margin: 5px 0;
 }
@@ -45,8 +49,38 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 button:hover {
     background-color: #0056b3;
 }
+
+form .reset{
+    background-color: #ff0000;  
+}
+
+form .reset:hover {
+    background-color: #b30000;
+}
+
+.item1 { 
+    grid-area: left;
+    width: 1050px;
+
+ }
+.item2 {
+     grid-area: right;
+     justify-content: right;
+     }
+
+     .grid-container {
+        display: grid;
+        grid-template-areas:
+          'left right'
+          'left right'
+          'left right';
+        gap: 10px;
+        
+      }
+      
