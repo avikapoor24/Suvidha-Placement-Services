@@ -41,7 +41,6 @@ body{
     height: 70vh;
     width: 60%;
     position: relative;
-    
     top: 30px;
 }
 h2{
@@ -108,6 +107,11 @@ h2 span{
 }
 
 @media screen and (max-width: 468px){
+    .top-left{
+        border-bottom: 2px solid black ;
+        padding-bottom: 10px;
+        padding-left: 2px;
+    }
     .top-left a h1{
         text-align: center;
         position: relative;
@@ -143,6 +147,11 @@ h2 span{
     }
 }
 @media screen and (max-width: 768px){
+    .top-left{
+        border-bottom: 2px solid black ;
+        padding-bottom: 10px;
+        padding-left: 2px;
+    }
     .top-left a h1{
         text-align: center;
         position: relative; 
