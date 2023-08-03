@@ -1,10 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    /* display: flex; */
     background-color: #e4e4e4;
     background-image: url("/images/img2.jpg");
-    /* Replace the URL with your actual
-     image or a placeholder URL */
     background-size: cover;
     background-position: center;
     height: 100vh;
