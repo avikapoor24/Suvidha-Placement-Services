@@ -98,9 +98,13 @@ h2 span{
     border-radius: 20px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    width: 70%;
+    width: 45%;
     height: 600px;
     background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 26px;
+    right: 0.2px;
+    z-index: -1;
 }
 .BgImg{
     display: flex;
