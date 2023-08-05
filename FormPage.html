@@ -93,7 +93,7 @@
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => rightside.style.display = "none", thankYouMessage.style.display = "flex")
+        .then(response => rightside.style.display = "none", ThankContain.style.display = "flex")
         .catch(error => console.error('Error!', error.message))
         
     })
