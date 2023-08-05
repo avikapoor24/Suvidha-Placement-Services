@@ -45,11 +45,9 @@ h3 {
     width: 60%; 
     margin: 1.25rem 0.9375rem;
 }
-.thankcontain{
-display: none;
 
-}
 #thankYouMessage{
+    display:none;
     margin: 50% 0; 
     width: 23rem;    
     max-width: 31.25rem; 
