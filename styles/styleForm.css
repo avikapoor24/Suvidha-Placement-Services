@@ -12,9 +12,7 @@ body {
     grid-template-columns: 2fr 1fr; /* Two columns */
      gap: 50px;
   }
-  .ThankContain{
-    display: flex;
-  }
+  
 
   .logo {
     width: 20%;
