@@ -61,6 +61,7 @@ h2 span{
     color: rgb(74, 74, 74);  
 }
 .buttonContainer{
+    display: flex;
     margin-top: 0px;
     font-family: 'Barlow Condensed', sans-serif;
     position: relative;
