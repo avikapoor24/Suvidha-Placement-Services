@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap');
-
 *{
     padding: 0;
     margin: 0;
@@ -91,6 +90,8 @@ h2 span{
     color: rgb(30, 29, 39);
     
 }
+
+/* Image on right in web mode */
 .ImgContainer{
     display: flex;
     justify-content: right;
@@ -99,7 +100,7 @@ h2 span{
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     width: 45%;
-    height: 600px;
+    height: 80%;
     background-color: rgb(0, 0, 0);
     position: absolute;
     bottom: 26px;
@@ -116,6 +117,8 @@ h2 span{
     z-index: 1;
     position: relative;
 }
+
+/* Scroll down */
 .scroll-down {
     height: 50px;
     width: 30px;
@@ -212,6 +215,12 @@ h2 span{
         grid-template-columns: 1fr; /* Single column layout */
       }
     .buttonContainer{
+        margin-top: 0px;
+        font-family: 'Barlow Condensed', sans-serif;
+        position: relative;
+        right: 0%;
+    }
+    .buttonContainer{
         right: 0;
     }
     .ImgContainer{
@@ -250,9 +259,12 @@ h2 span{
         width: 100%;
         grid-template-columns: 1fr; /* Single column layout */
       }
-    .buttonContainer{
+      .buttonContainer{
+        margin-top: 0px;
+        font-family: 'Barlow Condensed', sans-serif;
+        position: relative;
         right: 0;
-      }
+    }
       
     .ImgContainer{
         display: none;
