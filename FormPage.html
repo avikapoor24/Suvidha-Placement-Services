@@ -76,8 +76,8 @@
         </form>
         
 </div>
-<div class="ThankContain">
-<div class="thankYou" id="thankYouMessage" >
+<div class="ThankContain" id="thankYouMessage">
+<div class="thankYou"  >
            <h2>Thank You!<br><span>Your form has been submitted successfully.<br><a href="https://suvidhafoundationedutech.org/">Return Home</a></span></h2> 
         </div>
         </div>
@@ -93,7 +93,7 @@
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => rightside.style.display = "none", ThankContain.style.display = "flex")
+        .then(response => rightside.style.display = "none", thankYouMessage.style.display = "flex")
         .catch(error => console.error('Error!', error.message))
         
     })
