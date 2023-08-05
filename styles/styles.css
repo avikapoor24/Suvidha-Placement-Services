@@ -217,14 +217,13 @@ h2 span{
         grid-template-columns: 1fr; /* Single column layout */
       }
     .buttonContainer{
+        display: block;
         margin-top: 0px;
         font-family: 'Barlow Condensed', sans-serif;
         position: relative;
         right: 0%;
     }
-    .buttonContainer{
-        right: 0;
-    }
+    
     .ImgContainer{
         display: none;
     }
@@ -262,6 +261,7 @@ h2 span{
         grid-template-columns: 1fr; /* Single column layout */
       }
       .buttonContainer{
+        display: block;
         margin-top: 0px;
         font-family: 'Barlow Condensed', sans-serif;
         position: relative;
