@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
+    /* color: #fff; */
 }
 body{
     
@@ -18,17 +18,17 @@ body{
     background-position: center;
 }
 #sec-1{
-    background-color: rgba(255, 255, 255, 0.503);
-    backdrop-filter: blur(20px);
+    background-color: rgba(193, 193, 193, 0.503);
+    
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     padding: 30px;
     border-radius: 10px;
-    border: 2px solid rgba(255,255,255, 0.2);
+    /* border: 2px solid rgba(255,255,255, 0.2); */
 }
 .login-header{
     text-align: center;
     margin-bottom: 10px;
-    
+    color: #fff;
 }
 .form-content{
     display: flex;
@@ -43,19 +43,21 @@ body{
     border-radius: 35px;
     border: none;
     background-color: transparent;
-    background-color: rgba(255, 255, 255, 0.249);
+    background-color: rgba(189, 189, 189, 0.249);
 }
 .form-item input::placeholder{
-    color: #fff;
+    color: #a9a9a9;
 }
 .remember-forget{
     display: flex;
     gap: 50px;
     font-size: 14px;
     margin-bottom: 5px;  
+    color: #d3d3d3;
 }
 .remember-forget a{
     text-decoration: none;
+    color: #d3d3d3;
 }
 .form-content button{
     color: black;
@@ -64,4 +66,5 @@ body{
     border-radius: 30px;
     padding: 10px;
     margin: 10px 0;
+    margin-top: 20px;
 }
