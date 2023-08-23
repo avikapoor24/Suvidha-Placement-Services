@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Registration</title>
+    <link rel="stylesheet" href="/styles/styleForm.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    
+<div class="container grid-container">
+    <div class="left-side">   
+        <h1>Transforming Lives, One Step at a Time:<br><span>  Discover the Power of Impact with Us!</span></h1>
+    </div>
+
+    <div id="rightside" class=" rightside container-1">
+        <form autocomplete="off" method="post" name="google-sheet">
+            <img src="./Images/SFlogo.jpg" class="logo" alt="SFlogo">
+            <h3>🙌 Welcome to Suvidha Foundation Internship</h3>
+            <input type="text" placeholder="Full Name" name="Name" required>
+            <input type="text" placeholder="Email Id" name="EmailId" required>
+            <input type="text" placeholder="Phone Number" name="Mobile" required>
+            <input type="text" placeholder="WhatsApp Number" name="WhatsApp" required>
+            <input type="text" placeholder="Highest Qualification" name="Degree" required>
+            <select name="Domain" required>
+                <option value="Not Selected">Your Internship Domain</option>
+                <option value="Human Resource Management">Human Resource Management</option>
+                <option value="Fundraising Coordinator">Fundraising Coordinator</option>
+                <option value="Social Media Marketing">Social Media Marketing</option>
+                <option value="Business Developmen">Business Development</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Machine Learning">Machine Learning</option>
+                <option value="Coding  Tutor">Coding  Tutor</option>
+                <option value="Artificial Intelligence">Artificial Intelligence</option>
+                <option value="Operations">Operations</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Social Campainer">Social Campainer</option>
+                <option value="Public Relations">Public Relations</option>
+                <option value="Development">Development</option>
+                <option value="Graphic Designer">Graphic Designer</option>
+                <option value="Content Writer">Content Writer</option>
+                <option value="Digital Marketing">Digital Marketing</option>
+                <option value="Capital Campaign">Capital Campaign</option>
+                <option value="Community Outreach">Community Outreach</option>
+                <option value="Philanthrophy">Philanthrophy</option>
+                <option value="Data Entry">Data Entry</option>
+                <option value="Volunteer">Volunteer</option>
+                <option value="Summer Internship">Summer Internship</option>
+                <option value="Human Resource Recruiter">Human Resource Recruiter</option>
+                <option value="Campus Ambassador">Campus Ambassador</option>
+                <option value="Social Worker">Social Worker</option>
+                <option value="English Tutor">English Tutor</option>
+                <option value="Web Development Tutor">Web Development Tutor</option>
+                <option value="Trainee Business Analyst">Trainee Business Analyst</option>
+                <option value="Facebook Marketing">Facebook Marketing</option>
+                <option value="Instagram Marketing">Instagram Marketing</option>
+                <option value="LinkedIn Marketing">LinkedIn Marketing</option>
+                <option value="YouTube Marketing">YouTube Marketing</option>
+                <option value="Event Management">Event Management</option>
+                <option value="Mentor">Mentor</option>
+                <option value="Marketing">Marketing</option>
+            </select>
+            <select name="Internship-Duration" required >
+                <option value="Not Selected">Internship Duration</option>
+                <option value="1 Week">1 Week</option>
+                <option value="1 Month">1 Month</option>
+                <option value="2 Months">2 Months</option>
+                <option value="3 Months">3 Months</option>
+                <option value="6 Months">6 Months</option>
+            </select>
+            
+            <button type="submit" name="Submit">Send</button>
+            <button type="reset" class="reset">Reset Form</button>
+            
+        </form>
+        
+</div>
+<div class="ThankContain" id="thankYouMessage">
+           <h2>Thank You!<br><span>Your form has been submitted successfully.<br><a href="https://suvidhafoundationedutech.org/">Return Home</a></span></h2> 
+       
+        </div>
+</div>
+
+
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxhXW0x5Bi60oHIFt-Ah1W1SukBlYktQBTIKJODlHD6g60A3K8eC_ZXPyL0BicICmr3/exec'
+    const form = document.forms['google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => rightside.style.display = "none", thankYouMessage.style.display = "flex")
+        .catch(error => console.error('Error!', error.message))
+        
+    })
+  </script>
+
+</body>
+</html>
