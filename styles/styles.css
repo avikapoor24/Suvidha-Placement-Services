@@ -10,7 +10,6 @@ html{
 
 body{
     background-color: #fff;
-    
 }
 .container{
     height: 100vh;
@@ -18,7 +17,7 @@ body{
 .top-left{
     display: flex;
     width: 100%;
-    margin: 10px;
+    margin: 10px 0;
 }
 .top-left a {
     display: flex;
@@ -167,28 +166,8 @@ h2 span{
       opacity: 0;
     }
   }
-  
 
-
-  .Image1{
-    background-image: url("/Images/img1F.png");
-  }
-  .Image2{
-    background-image: url("/Images/img3.png");
-  }
-  .Image3{
-    background-image: url("/Images/img4.png");
-  }
-  .Image4{
-    background-image: url("/Images/img5.png");
-  }
-  .Image5{
-    background-image: url("/Images/img6.png");
-  }
-
-  .Image1,.Image2,.Image3,.Image4,.Image5{
-    background-size: cover;
-    background-position: center;
+  .bottom{
     height: 100vh;
   }
 
@@ -201,7 +180,6 @@ h2 span{
     .top-left a h1{
         text-align: center;
         position: relative;
-        
         top: 5%;
     }
     .logo{
@@ -279,5 +257,11 @@ h2 span{
     }
     h2 span{
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 370px){
+    .top-left a h1{
+        font-size: 24px;
     }
 }
